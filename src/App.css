@@ -1,38 +1,231 @@
-.App {
+body {
+  min-height: 100vh;
+}
+
+.content {
+  margin: 0px auto;
+  min-height: 100vh;
+}
+
+.unlock-regular {
+  font-family: "Unlock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+select,
+input {
+  border-radius: 50px !important;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+.game-amount {
+  border: 1px solid #efefef;
+  padding: 3rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  position: relative;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-amount:hover {
+  cursor: pointer;
+  background: linear-gradient(135deg, #ffd802, #e89604);
+}
+
+.game-amount-active {
+  background: linear-gradient(135deg, #ffd802, #e89604);
+  border: 1px solid #efefef;
+  padding: 3rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  position: relative;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-amount-best-seller {
+  font-size: 10pt;
+  position: absolute;
+  top: -10px;
+  color: white;
+  left: 0px;
+  right: 0px;
+  margin-left: 3rem;
+  background-color: #ad352d;
+  padding: 0.5rem;
+  margin-right: 3rem;
+  border-radius: 50px;
+}
+
+.how-it-works {
+  background-color: #f8f9fa; /* Cor de fundo clara para destacar o conteúdo */
+  padding: 40px; /* Espaçamento ao redor do conteúdo */
+  border-radius: 12px; /* Bordas arredondadas para suavizar o design */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+
+  margin: 0 auto; /* Centraliza o conteúdo na página */
+}
+
+.how-it-works h2 {
+  font-size: 36px;
+  color: #012f34; /* Cor de texto escura para contraste */
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.how-it-works p {
+  font-size: 18px;
+  color: #333; /* Cor de texto padrão */
+  line-height: 1.6;
+  font-family: "Lato", sans-serif;
+}
+
+.how-it-works ul {
+  margin-top: 20px;
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0;
+}
+
+.how-it-works ul li {
+  font-size: 18px;
+  color: #012f34; /* Cor de texto escura */
+  margin-bottom: 15px;
+  background-color: #eaf4f5; /* Fundo suave para destacar itens */
+  padding: 15px;
+  border-left: 4px solid #ffcc00; /* Barra lateral para destaque */
+  border-radius: 6px; /* Bordas arredondadas */
+}
+
+.how-it-works strong {
+  color: #001a21; /* Destaque para os textos importantes */
+}
+
+.how-it-works p:last-child {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #012f34;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.button-success {
+  padding: 1.2rem;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+
+.footer {
+  color: white;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.legal-text {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.custom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.payment-screen {
+  padding: 20px;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.qrcode-box {
+  background-color: white;
+  padding: 1rem;
+  width: 300px;
+  margin: 0px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.timer {
+  font-size: 18px;
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.step-by-step {
+  margin-top: 30px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.step-list {
+  font-size: 18px;
+  color: white;
+  line-height: 1.6;
+  list-style-type: decimal;
+  padding-left: 20px;
+  width: auto;
+  text-align: left;
+  margin: 0px auto;
+}
+
+.step-list li {
+  margin-bottom: 10px;
+}
+
+.list-unstyled {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.list-unstyled li {
+  margin-bottom: 15px;
+}
+
+.details-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.detail-text {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.detail-value {
+  font-size: 18px;
+  color: white;
+  text-align: right;
+  font-weight: bold;
+}
+
+.min-vh-90 {
+  min-height: 90vh;
+}
+
+.searchInput {
+  border-radius: 0px !important;
+  border-top-left-radius: 50px !important;
+  border-bottom-left-radius: 50px !important;
 }
